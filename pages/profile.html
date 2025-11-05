@@ -16,7 +16,10 @@
         <!-- Navigation -->
         <nav class="h-20 w-full bg-black-2 px-5 flex justify-between items-center relative">
             <div class="flex items-center">
-
+                <button id="menuBtn" type="button" aria-controls="sidebar" aria-expanded="false"
+                    class="cursor-pointer pr-3 lg:hidden">
+                    <iconify-icon icon="jam:menu" class="text-white text-5xl"></iconify-icon>
+                </button>
                 <a href="./../index.html" class="h-10">
                     <img src="./../images/logo.svg" alt="Cam 4 Teens Logo" class="h-10" /></a>
             </div>
@@ -44,10 +47,12 @@
             </div>
 
             <div class="flex items-center gap-x-3">
-                <button class="hidden md:block text-white border-white/15 hover:bg-white hover:text-black px-3 py-2 rounded-lg cursor-pointer">
+                <button
+                    class="hidden md:block text-white border-white/15 hover:bg-white hover:text-black px-3 py-2 rounded-lg cursor-pointer">
                     BROADCAST YOURSELF
                 </button>
-                <button class="hidden md:block text-white bg-mature hover:bg-white hover:text-mature px-3 py-2 rounded-lg cursor-pointer">
+                <button
+                    class="hidden md:block text-white bg-mature hover:bg-white hover:text-mature px-3 py-2 rounded-lg cursor-pointer">
                     SIGN UP
                 </button>
                 <button class="text-white border border-blue/15 flex px-2 md:px-3 py-2 rounded-full">
@@ -59,10 +64,36 @@
     </div>
 
     <div class="p-5 flex-1 w-full flex flex-col lg:flex-row gap-x-3 pt-28 min-h-screen">
+        <aside id="sidebar"
+            class="bg-back w-72 -ml-5 lg:ml-0 lg:w-52 rounded-xl py-3 px-5 lg:px-2 fixed top-36 bottom-0 hidden z-50 flex-col gap-y-8 overflow-auto hide-scrollbar">
+
+            <!-- Menus Section -->
+            <section class="flex flex-col gap-y-2 relative">
+
+                <button class="bg-mature text-white w-full flex justify-baseline gap-x-3 p-2  rounded-lg"><iconify-icon
+                        icon="fa7-solid:home" class=" text-lg"></iconify-icon>Home</button>
+
+                <button
+                    class="w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg hover:bg-mature cursor-pointer"><iconify-icon
+                        icon="weui:discover-filled" class=" text-lg"></iconify-icon>Discover</button>
+
+                <button
+                    class="w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
+                        icon="mynaui:hash-hexagon-solid" class=" text-lg"></iconify-icon>Hashtags</button>
+
+                <button
+                    class=" w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
+                        icon="basil:video-solid" class=" text-lg"></iconify-icon>Private Show</button>
+
+                <button
+                    class=" w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
+                        icon="fluent:people-team-20-filled" class=" text-lg"></iconify-icon>Followers</button>
+            </section>
+        </aside>
+        
         <main class="flex-1 flex flex-col gap-y-3 h-full lg:mr-[22%]">
             <section class="w-full  relative rounded-xl">
-                <img src="./../images/image-3.jpg" alt="Image 2"
-                    class="object-cover object-center w-full rounded-xl" />
+                <img src="./../images/image-3.jpg" alt="Image 2" class="object-cover object-center w-full rounded-xl" />
                 <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
                 <a href="../index.html" alt="Cam 4 Teens Logo"
                     class="p-1 flex items-center justify-center border border-white rounded-full text-white absolute left-5 top-5">
@@ -71,16 +102,19 @@
                 <div class="absolute flex flex-col justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <span class="text-center text-2xl text-white">Session terminée</span>
                     <div class="py-1 flex gap-x-1">
-                        <button class="text-black bg-white px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
+                        <button
+                            class="text-black bg-white px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
                             <iconify-icon icon="mingcute:play-fill" class=" text-sm"></iconify-icon>
                             <span> Voir le live</span>
                         </button>
-                        <button class="text-white bg-mature px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
+                        <button
+                            class="text-white bg-mature px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
                             <iconify-icon icon="fluent:chat-32-filled" class="text-sm"></iconify-icon>
                             <span>Entrer dans le chat</span>
                         </button>
                     </div>
-                    <span class="text-base text-center text-white pt-3">Déjà membre ? <a href="./../index.html" class="text-mature">Se connecter</a></span>
+                    <span class="text-base text-center text-white pt-3">Déjà membre ? <a href="./../index.html"
+                            class="text-mature">Se connecter</a></span>
                 </div>
             </section>
 
@@ -122,7 +156,7 @@
             </article>
             <section class="bg-black-soft text-white p-5 rounded-xl">
                 <!-- Tabs Header -->
-                <div class="flex border-b border-gray-200 relative">
+                <div class="flex relative">
                     <button
                         class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-white font-medium active-tab"
                         data-tab="about">
@@ -198,7 +232,7 @@
             </div>
         </aside>
     </div>
-
+    <script src="./../js/index.js"></script>
     <script src="./../js/profile.js"></script>
 </body>
 
