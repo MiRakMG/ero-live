@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-html, body {
+html,
+body {
   font-family: "Poppins", sans-serif;
 }
 
 .background {
-  background: linear-gradient(
-    118deg,
-    rgba(93, 212, 255, 1) 0%,
-    rgba(255, 49, 234, 1) 100%
-  );
+  background: linear-gradient(91.79deg, #ff2727 -2.62%, #991818 102.76%);
 }
 
 .hide-scrollbar {
@@ -21,5 +18,5 @@ html, body {
 }
 
 select {
-  background-color: #333333 !important;
+  background-color: #7B0000 !important;
 }

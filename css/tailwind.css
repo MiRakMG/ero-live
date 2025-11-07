@@ -3,12 +3,16 @@
 @theme {
   /* Color */
   --color-back: #101010;
-  --color-black-2 : #1F1F1F;
-  --color-black-soft : #191919;
-  --color-mature : #9E3DE8;
-  --color-blue : #007DCA;
-  --color-gray: #F2F7F8;
-  --color-gray-2 : #333333;
+  --color-black-2: #1f1f1f;
+  --color-black-soft: #191919;
+  --color-mature: #9e3de8;
+  --color-blue: #007dca;
+  --color-gray: #f2f7f8;
+  --color-gray-2: #333333;
+  --color-red: #ff001a;
+  --color-red-2: #7b0000;
+  --color-murrey: #db324d;
+  --color-yellow: #dfce0c;
 
   /* Spacing */
   --spacing-90: 90px;
@@ -23,5 +27,4 @@
 
   /* Breakpoints */
   --breakpoint-xs: 450px;
-
 }
