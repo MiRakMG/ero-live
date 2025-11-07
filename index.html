@@ -17,7 +17,8 @@
         <!-- Navigation -->
         <nav class="h-20 w-full background px-5 flex justify-between items-center relative">
             <div class="flex items-center">
-                <button id="menuBtn" type="button" aria-controls="sidebar" aria-expanded="false" class="cursor-pointer pr-3 lg:hidden">
+                <button type="button" aria-controls="sidebar" aria-expanded="false"
+                    class="menuBtn cursor-pointer pr-3 lg:hidden">
                     <iconify-icon icon="jam:menu" class="text-white text-5xl"></iconify-icon>
                 </button>
 
@@ -28,7 +29,7 @@
             <div class="hidden lg:flex h-full items-center gap-x-10">
                 <a href="#" class="text-white text-base relative h-full flex items-center hover:opacity-80">
                     <span>Home</span>
-                    <div class="absolute h-1 w-10 bg-yellow bottom-3"></div>
+                    <div class="absolute h-1 w-10 bg-yellow bottom-0"></div>
                 </a>
                 <a href="#" class="text-white text-base relative h-full flex items-center hover:opacity-80">
                     <span>Discover</span>
@@ -64,9 +65,9 @@
         </nav>
 
         <!-- Filters -->
-        <header class="flex gap-x-3 px-5 py-2 bg-red-2">
+        <header class="flex justify-between items-center gap-x-3 px-5 bg-red-2">
             <div class="relative w-fit">
-                <select class="cursor-pointer appearance-none px-4 py-2 text-white text-sm pr-8 focus:outline-none">
+                <select class="cursor-pointer appearance-none px-4 py-1 text-white text-sm pr-8 focus:outline-none">
                     <option class="bg-amber-900">Most popular</option>
                     <option>Europe</option>
                     <option>Asie</option>
@@ -75,40 +76,129 @@
                 <iconify-icon icon="mingcute:down-line"
                     class="absolute right-3 top-1/2 -translate-y-1/2 text-white text-lg pointer-events-none"></iconify-icon>
             </div>
-
+            <div class="bg-red-4 pl-5 pr-2 py-1 w-80 rounded-full flex items-center gap-x-3 my-3">
+                <input type="text" placeholder="Search name, tags..."
+                    class="placeholder:text-white/55 w-full text-white outline-none border-none" />
+                <button class="bg-red  rounded-full flex items-center justify-center p-2">
+                    <iconify-icon icon="ep:search" class="text-white text-lg"></iconify-icon>
+                </button>
+            </div>
         </header>
     </div>
 
-    <div class="p-5 flex-1 w-full flex gap-x-3 pt-36 relative">
+    <div class="p-5 flex-1 w-full flex gap-x-3 pt-40 relative">
         <aside id="sidebar"
-            class="bg-back w-72 -ml-5 lg:ml-0 lg:w-52 rounded-xl py-3 px-5 lg:px-2 fixed top-36 bottom-0 hidden z-50 flex-col gap-y-8 overflow-auto hide-scrollbar">
+            class="bg-red-3 w-72 -ml-5 lg:ml-0 lg:w-56 rounded-xl py-3 px-5 lg:px-2 fixed h-fit text-white hidden  top-40 bottom-0 z-50  flex-col gap-y-8 overflow-auto hide-scrollbar">
 
-            <!-- Menus Section -->
-            <section class="flex flex-col gap-y-2 relative">
+            <section>
+                <h3>Regions</h3>
+                <div class="bg-red-4 px-5 py-2 w-full rounded-full flex items-center gap-x-3 my-3">
+                    <input type="text" placeholder="Search"
+                        class="placeholder:text-white/55 w-full text-white outline-none border-none" />
+                    <iconify-icon icon="ep:search" class="text-white/30 text-lg"></iconify-icon>
+                </div>
 
-                <button class="bg-mature text-white w-full flex justify-baseline gap-x-3 p-2  rounded-lg"><iconify-icon
-                        icon="fa7-solid:home" class=" text-lg"></iconify-icon>Home</button>
+                <div class="flex flex-col gap-y-1">
+                    <label class="flex items-center gap-3 cursor-pointer select-none">
+                        <input type="checkbox" class="hidden peer" checked />
+                        <span
+                            class="w-5 h-5 flex items-center justify-center rounded-full border-2 border-white peer-checked:bg-red peer-checked:border-red text-red-4 peer-checked:text-white transition-all">
+                            <iconify-icon icon="material-symbols:check" class="text-lg "></iconify-icon>
+                        </span>
+                        <span>North America</span>
+                    </label>
 
-                <button
-                    class="w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg hover:bg-mature cursor-pointer"><iconify-icon
-                        icon="weui:discover-filled" class=" text-lg"></iconify-icon>Discover</button>
+                    <label class="flex items-center gap-3 cursor-pointer select-none">
+                        <input type="checkbox" class="hidden peer" checked />
+                        <span
+                            class="w-5 h-5 flex items-center justify-center rounded-full border-2 border-white peer-checked:bg-red peer-checked:border-red text-red-4 peer-checked:text-white transition-all">
+                            <iconify-icon icon="material-symbols:check" class=" text-lg "></iconify-icon>
+                        </span>
+                        <span>North America</span>
+                    </label>
+                </div>
+            </section>
 
-                <button
-                    class="w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
-                        icon="mynaui:hash-hexagon-solid" class=" text-lg"></iconify-icon>Hashtags</button>
+            <!-- Room size Section -->
+            <section>
+                <h3 class="mb-3">Room size</h3>
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-1.5 rounded-full bg-red text-white/80">
+                        Intimate
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red cursor-pointer">
+                        Mid-Sized
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red  cursor-pointer">
+                        High-Traffic
+                    </button>
+                </div>
+            </section>
 
-                <button
-                    class=" w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
-                        icon="basil:video-solid" class=" text-lg"></iconify-icon>Private Show</button>
+            <!-- Tags Section -->
+            <section>
+                <h3 class="mb-3">Room size</h3>
+                <div class="bg-red-4 px-5 py-2 w-full rounded-full flex items-center gap-x-3 my-3">
+                    <input type="text" placeholder="Search"
+                        class="placeholder:text-white/55 w-full text-dark-blue outline-none border-none" />
+                    <iconify-icon icon="ep:search" class="text-white/30 text-lg"></iconify-icon>
+                </div>
 
-                <button
-                    class=" w-full flex justify-baseline gap-x-3 p-2 text-white rounded-lg  hover:bg-mature cursor-pointer"><iconify-icon
-                        icon="fluent:people-team-20-filled" class=" text-lg"></iconify-icon>Followers</button>
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-1.5 rounded-full bg-red text-white/80">
+                        Intimate
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red cursor-pointer">
+                        Mid-Sized
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red  cursor-pointer">
+                        High-Traffic
+                    </button>
+                </div>
+            </section>
+
+            <!-- Ages section -->
+            <section>
+                <h3 class="mb-3">Ages</h3>
+                <div class="flex justify-between text-white/80 text-sm mb-1">
+                    <span>18</span>
+                    <span>30</span>
+                </div>
+
+                <div class="relative">
+                    <input id="ageRange" type="range" min="18" max="30" value="24"
+                        class="w-full appearance-none h-2 rounded-lg outline-none bg-gray-300 accent-red" />
+                    <!-- Cercle plein gauche -->
+                    <div class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 bg-red rounded-full"></div>
+                    <!-- Cercle vide droit -->
+                    <div
+                        class="absolute right-[33%] top-1/2 -translate-y-1/2 w-6 h-6 border-2 border-red bg-white rounded-full">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tags Section -->
+            <section>
+                <h3 class="mb-3">Tags</h3>
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red">
+                        6 tks
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red">
+                        12 - 18 tks
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red">
+                        30 - 42 tks
+                    </button>
+                    <button class="px-4 py-1.5 rounded-full bg-red-4 text-white/80 hover:bg-red">
+                        60 - 72 tks
+                    </button>
+                </div>
             </section>
         </aside>
 
         <!-- Ads Section -->
-        <div
+        <div id="ads-1"
             class="hidden lg:flex w-120 h-600 bg-gray/5 border border-white/15 border-dashed rounded-lg text-white items-center justify-center translate-y-1/2">
             120x600</div>
 
@@ -123,12 +213,39 @@
                 <!-- Content section -->
                 <div class="w-full h-full ">
                     <h2 class="text-2xl font-medium mb-1 text-white">Live Sex Cams</h2>
+                    <!-- Filter -->
+                    <div class="flex items-center gap-3 mb-4 w-full">
+                        <button type="button" aria-controls="sidebar" aria-expanded="false" class="menuBtn flex items-center gap-2
+                            background text-white px-4 py-2 rounded-full hover:bg-blue-2 transition cursor-pointer">
+                            Filter
+                            <iconify-icon icon="cuida:filter-outline" class="w-4 h-4"></iconify-icon>
+                        </button>
+
+                        <div
+                            class="flex-1 flex items-center gap-2 overflow-x-auto scrollbar-hide cursor-grab select-none">
+                            <button
+                                class="px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition bg-black-soft text-white/80 cursor-pointer hover:bg-red">
+                                2 girls sucking pussy
+                            </button>
+                            <button
+                                class="px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition bg-black-soft text-white/80 cursor-pointer hover:bg-red">
+                                3some </button>
+                            <button
+                                class="px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition bg-black-soft text-white/80 cursor-pointer hover:bg-red">
+                                agent crédit anall
+                            </button>
+                            <button
+                                class="px-3 py-1.5 rounded-full text-sm whitespace-nowrap transition bg-black-soft text-white/80 cursor-pointer hover:bg-red">
+                                ailish anal
+                            </button>
+                        </div>
+                    </div>
                     <div
                         class="grid w-full gap-2 grid-cols-1 xs:grid-cols-2 md:grid-cols-[repeat(auto-fill,minmax(230px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(278px,1fr))] justify-start">
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-3.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -243,7 +360,7 @@
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-2.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -354,7 +471,7 @@
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-3.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -391,45 +508,7 @@
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
-                                    <div class="absolute inset-0 bg-black/10"></div>
-                                    <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
-                                        <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
-                                            22 mins
-                                        </div>
-                                        <div
-                                            class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
-                                            <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
-                                            <span>52</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="px-3 text-white">
-                                    <h3 class="font-medium  mt-5 ">tropwet</h3>
-                                    <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
-                                    <div class="flex flex-wrap items-center mt-3 gap-3">
-                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
-                                            smallboobs</div>
-                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
-                                            natural</div>
-                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">18
-                                        </div>
-                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
-                                            teens</div>
-                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
-                                            longhair</div>
-                                    </div>
-                                </div>
-                            </article>
-                        </a>
-
-
-                        <a href="./pages/profile.html">
-                            <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
-                                <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-2.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -517,9 +596,7 @@
                                             <span>52</span>
                                         </div>
                                     </div>
-                                    <div
-                                        class="bg-[linear-gradient(132.99deg,#FFB515_25.88%,#993E0D_115.35%)] text-black py-0.5 px-2 rounded-sm absolute top-3 left-3 z-20">
-                                        HD</div>
+
                                 </div>
 
                                 <div class="px-3 text-white">
@@ -585,7 +662,7 @@
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-3.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -705,7 +782,47 @@
                         <a href="./pages/profile.html">
                             <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
                                 <div
-                                    class="w-full h-1/2 relative bg-[url('./../images/image-1.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-2.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
+                                    <div class="absolute inset-0 bg-black/10"></div>
+                                    <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
+                                        <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                            22 mins
+                                        </div>
+                                        <div
+                                            class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm flex items-center gap-x-1">
+                                            <iconify-icon icon="mdi:eye" class=" text-lg"></iconify-icon>
+                                            <span>52</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="bg-[linear-gradient(132.99deg,#FFB515_25.88%,#993E0D_115.35%)] text-black py-0.5 px-2 rounded-sm absolute top-3 left-3 z-20">
+                                        HD</div>
+                                </div>
+
+                                <div class="px-3 text-white">
+                                    <h3 class="font-medium  mt-5 ">tropwet</h3>
+                                    <p class="text-xs">he fucks the two girls and they cum in her mouth she eats the</p>
+                                    <div class="flex flex-wrap items-center mt-3 gap-3">
+                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
+                                            smallboobs</div>
+                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
+                                            natural</div>
+                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">18
+                                        </div>
+                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
+                                            teens</div>
+                                        <div class="text-murrey py-1 px-3 rounded-full border border-murrey text-xs">
+                                            longhair</div>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+
+                        <a href="./pages/profile.html">
+                            <article class="bg-black-soft min-h-360 xs:h-344 rounded-lg">
+                                <div
+                                    class="w-full h-1/2 relative bg-[url('./../images/image-2.jpg')] bg-cover bg-center bg-no-repeat rounded-t-lg">
                                     <div class="absolute inset-0 bg-black/10"></div>
                                     <div class="absolute flex left-3 bottom-3 z-20 gap-x-3">
                                         <div class=" bg-black-2/30 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
@@ -748,7 +865,7 @@
                         </button>
 
                         <!-- Page Numbers -->
-                        <button class="px-3 py-1 rounded-sm bg-mature text-white">1</button>
+                        <button class="px-3 py-1 rounded-sm bg-yellow-2 text-black">1</button>
                         <button class="px-3 py-1 rounded-sm text-white border border-black-soft">2</button>
                         <button class="px-3 py-1 rounded-sm text-white border border-black-soft">3</button>
 
