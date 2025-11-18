@@ -11,113 +11,70 @@
     <link rel="stylesheet" href="./../css/styles.css" />
 </head>
 
-<body class="flex flex-col text-sm bg-white">
+<body class="flex flex-col text-sm bg-gaming-dark-2">
     <div class="fixed w-full z-50">
         <!-- Navigation -->
-        <nav class="h-20 w-full bg-blue px-5 flex gap-x-5 justify-between items-center relative">
-            <div class="flex items-center">
+        <nav class="h-20 w-full bg-gaming-dark pr-5 flex gap-x-5 justify-between items-center relative ">
+            <div class="flex items-center w-1/2 lg:w-1/4 bg-[#0D1A31] h-full pl-5 justify-between">
                 <a href="./../index.html" class="h-10">
                     <img src="./../images/logo.svg" alt="Cam 4 Teens Logo" class="h-10" /></a>
+                <div class="h-full aspect-square clip-angled bg-gaming-dark"></div>
 
-                <div class="hidden md:flex items-center gap-x-2 ml-10">
+                <!-- <div class="hidden md:flex items-center gap-x-2 ml-10">
                     <div class="h-3 w-3 bg-[#25FE7F] rounded-full"></div>
                     <span class="text-white text-xs">7 899 en ligne</span>
-                </div>
+                </div> -->
             </div>
 
-            <div class="bg-[#F2F7F830] px-5 py-2 w-[30%] rounded-lg hidden lg:flex items-center gap-x-3">
-                <iconify-icon icon="ep:search" class="text-white/65 text-3xl"></iconify-icon>
-                <input type="text" placeholder="Search chaturbate"
-                    class="placeholder:text-white/35 w-full text-white outline-none border-none" />
+            <div
+                class="flex-1 lg:flex-none place-content-end lg:bg-gaming-dark-2 lg:pl-5 lg:w-[30%] rounded-lg flex items-center gap-x-3 h-10">
+                <input type="text" placeholder="Search models"
+                    class="placeholder:text-white/72 w-full text-white outline-none border-none hidden lg:block" />
+                <button class="bg-green h-full aspect-square rounded-lg flex items-center justify-center"><iconify-icon
+                        icon="ep:search" class="text-gaming-dark text-2xl"></iconify-icon></button>
             </div>
 
             <div class="flex items-center gap-x-3">
                 <button
-                    class="hidden md:block text-black-2 bg-white border-white/15 hover:bg-hightlight hover:text-white px-3 py-2 rounded-lg cursor-pointer">
-                    BROADCAST YOURSELF
+                    class=" text-white bg-transparent border border-white hover:border-green hover:bg-green hover:text-gaming-dark px-3 py-2 rounded-lg cursor-pointer">
+                    LOGIN
                 </button>
-                <button
-                    class="hidden md:block text-white bg-hightlight hover:bg-white hover:text-hightlight px-3 py-2 rounded-lg cursor-pointer">
-                    SIGN UP
-                </button>
-                <button
-                    class="text-white border border-[#007DCA1A] flex px-2 md:px-3 gap-x-3 py-1 cursor-pointer rounded-lg">
-                    <iconify-icon icon="fluent:person-28-filled" class="text-5xl md:text-lg"></iconify-icon>
-                    <iconify-icon icon="mingcute:down-line" class="hidden md:block text-base"></iconify-icon>
+                <button class="text-gaming-dark bg-green hover:opacity-90 px-3 py-2 rounded-lg cursor-pointer">
+                    JOIN FREE
                 </button>
             </div>
         </nav>
 
-        <div class="lg:hidden bg-blue px-5 pb-3">
-            <div class="bg-[#F2F7F830] px-5 py-3 w-full rounded-lg flex items-center gap-x-3">
-                <iconify-icon icon="ep:search" class="text-white/65 text-3xl"></iconify-icon>
-                <input type="text" placeholder="Search chaturbate"
-                    class="placeholder:text-white/35 w-full text-white outline-none border-none" />
-            </div>
-        </div>
-
         <!-- Tabs -->
-        <header class="h-12 bg-blue-soft px-5 flex justify-between items-center">
-            <div class="flex items-end gap-x-5 h-full">
-                <button class="text-white font-semibold border-b-2 border-hightlight hover:cursor-pointer pb-1.5">
-                    Featured
-                </button>
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-hightlight hover:cursor-pointer pb-2">
-                    Women
-                </button>
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-hightlight hover:cursor-pointer pb-2">
-                    Men
-                </button>
+        <header class="h-12 bg-gaming-dark px-5 flex justify-center gap-x-10 sm:gap-x-16 items-center">
+            <button class="text-white font-semibold border-b-2 border-green hover:cursor-pointer pb-1.5">
+                Featured
+            </button>
+            <button
+                class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-green hover:cursor-pointer pb-2">
+                Women
+            </button>
+            <button
+                class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-green hover:cursor-pointer pb-2">
+                Men
+            </button>
 
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-hightlight hover:cursor-pointer pb-2">
-                    Couples
-                </button>
+            <button
+                class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-green hover:cursor-pointer pb-2">
+                Couples
+            </button>
 
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-hightlight hover:cursor-pointer pb-2">
-                    Trans
-                </button>
-            </div>
-            <div class="hidden md:flex text-white bg-murrey h-8 px-2 rounded-full  items-center justify-center">
-                <span>18+ only</span>
-            </div>
+            <button
+                class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-green hover:cursor-pointer pb-2">
+                Trans
+            </button>
         </header>
     </div>
 
     <div class="p-5 flex-1 w-full flex flex-col lg:flex-row gap-x-3 pt-52 lg:pt-36 min-h-screen">
 
-        <main class="flex-1 flex flex-col gap-y-3 h-full lg:mr-[22%]">
-            <section class="w-full  max-h-screen relative rounded-xl">
-                <img src="./../images/image-1.jpg" alt="Image 2"
-                    class="object-cover object-center w-full rounded-xl max-h-screen" />
-                <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
-                <a href="../index.html" alt="Cam 4 Teens Logo"
-                    class="p-1 flex items-center justify-center border border-white rounded-full text-white absolute hover:bg-red hover:border-red left-5 top-5">
-                    <iconify-icon icon="lsicon:left-outline" class="text-2xl"></iconify-icon>
-                </a>
-                <div class="absolute flex flex-col justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <span class="text-center text-2xl text-white">Session terminée</span>
-                    <div class="py-1 flex gap-x-1">
-                        <button
-                            class="text-black bg-white px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
-                            <iconify-icon icon="mingcute:play-fill" class=" text-sm"></iconify-icon>
-                            <span> Voir le live</span>
-                        </button>
-                        <button
-                            class="text-white bg-hightlight px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
-                            <iconify-icon icon="fluent:chat-32-filled" class="text-sm"></iconify-icon>
-                            <span>Entrer dans le chat</span>
-                        </button>
-                    </div>
-                    <span class="text-base text-center text-white pt-3">Déjà membre ? <a href="./../index.html"
-                            class="text-hightlight">Se connecter</a></span>
-                </div>
-            </section>
-
-            <article class="bg-back text-black-2 p-5 rounded-xl flex justify-between items-start">
+        <main class="flex-1 flex flex-col gap-y-3 h-full lg:mr-80">
+            <article class="bg-gaming-dark text-white p-5 rounded-xl flex justify-between items-start">
                 <div class="flex gap-x-3 items-center">
                     <img src="./../images/avatar.jpg" alt="avatar image" class="h-20 w-20 rounded-full object-cover">
                     <div class="">
@@ -153,28 +110,54 @@
                     </span>
                 </div>
             </article>
+            <section class="w-full  max-h-screen relative rounded-xl">
+                <img src="./../images/image-4.jpg" alt="Image 2"
+                    class="object-cover object-center w-full rounded-xl max-h-screen" />
+                <div class="absolute inset-0 bg-black/50 rounded-xl"></div>
+                <a href="../index.html" alt="Cam 4 Teens Logo"
+                    class="p-1 flex items-center justify-center border border-white rounded-full text-white absolute hover:bg-red hover:border-red left-5 top-5">
+                    <iconify-icon icon="lsicon:left-outline" class="text-2xl"></iconify-icon>
+                </a>
+                <div class="absolute flex flex-col justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <span class="text-center text-2xl text-white">Session terminée</span>
+                    <div class="py-1 flex gap-x-1">
+                        <button
+                            class="text-black bg-white px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
+                            <iconify-icon icon="mingcute:play-fill" class=" text-sm"></iconify-icon>
+                            <span> Voir le live</span>
+                        </button>
+                        <button
+                            class="text-shadow-gaming-dark bg-green px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
+                            <iconify-icon icon="fluent:chat-32-filled" class="text-sm"></iconify-icon>
+                            <span>Entrer dans le chat</span>
+                        </button>
+                    </div>
+                    <span class="text-base text-center text-white pt-3">Déjà membre ? <a href="./../index.html"
+                            class="text-green">Se connecter</a></span>
+                </div>
+            </section>
 
             <!-- Ads Section -->
             <div
-                class="w-full md:w-728 h-90 bg-black/5 border border-black/15 border-dashed rounded-lg text-black-2 flex items-center justify-center ml-[50%] -translate-x-1/2 ">
+                class="w-full md:w-728 h-90 bg-gray/5 border border-white/15 border-dashed rounded-lg text-white/65 flex items-center justify-center ml-[50%] -translate-x-1/2 ">
                 728x90</div>
 
 
-            <section class="bg-white text-black-2 p-5 rounded-xl">
+            <section class="text-white p-5 rounded-xl">
                 <!-- Tabs Header -->
                 <div class="flex border-b border-b-black-2/15 relative">
                     <button
-                        class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-black-2 font-medium active-tab"
+                        class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-white font-medium active-tab"
                         data-tab="about">
-                        <iconify-icon icon="ep:info-filled" class="text-black-2"></iconify-icon> About
+                        <iconify-icon icon="ep:info-filled" class="text-white"></iconify-icon> About
                     </button>
-                    <button class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-black-2 font-medium"
+                    <button class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-white font-medium"
                         data-tab="tags">
-                        <iconify-icon icon="fa:tags" class="text-black-2"></iconify-icon> Tags
+                        <iconify-icon icon="fa:tags" class="text-white"></iconify-icon> Tags
                     </button>
 
                     <span id="active-bar"
-                        class="absolute bottom-0 left-0 h-[3px] bg-hightlight rounded transition-all duration-300 w-20"></span>
+                        class="absolute bottom-0 left-0 h-[3px] bg-green rounded transition-all duration-300 w-20"></span>
                 </div>
 
                 <!-- Tabs Content -->
@@ -228,13 +211,14 @@
 
         </main>
 
-        <aside class="w-full mt-3 lg:mt-0 lg:w-[20%] h-full lg:fixed flex flex-col gap-y-3 right-5 ">
-            <div class="h-52 lg:h-[50%] bg-black/5 text-black-2 rounded-xl p-5">
-                <h3>Publicités</h3>
+        <aside
+            class="w-full lg:w-[300px] lg:max-h-[calc(100vh-9rem)] lg:top-36 lg:py-5 lg:fixed flex flex-wrap lg:flex-nowrap gap-x-5 justify-center lg:justify-baseline lg:flex-col gap-y-3 right-5 overflow-y-auto hide-scrollbar">
+            <div class="lg:mt-40 h-600 w-[300px] lg:w-full bg-gaming-dark text-white rounded-xl p-5 shrink-0">
+                <h3>Annonces</h3>
             </div>
 
-            <div class="h-48 lg:h-[30%] bg-black/5 text-black-2 rounded-xl p-5">
-                <h3>Publicités</h3>
+            <div class="h-600 w-[300px] lg:w-full bg-gaming-dark text-white rounded-xl p-5 shrink-0">
+                <h3>Annonces</h3>
             </div>
         </aside>
     </div>

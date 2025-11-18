@@ -7,10 +7,14 @@
   --color-hightlight: #f05d5e;
   --color-back: #f2f7f8;
   --color-black-2: #101010;
-  --color-gray: #cccccc;
-  --color-gray-2: #f8f8f8;
   --color-dark-blue: #030920;
   --color-murrey: #db324d;
+
+  --color-gaming-dark: #040c1a;
+  --color-gaming-dark-2: #0b1424;
+  --color-green: #c7ff00;
+  --color-gray: #f2f7f8;
+  --color-gray-2: #cccccc;
 
   /* Spacing */
   --spacing-90: 90px;
@@ -18,6 +22,7 @@
   --spacing-200: 200px;
   --spacing-270: 270px;
   --spacing-288: 219px;
+  --spacing-285: 285px;
   --spacing-344: 344px;
   --spacing-360: 360px;
   --spacing-600: 600px;
