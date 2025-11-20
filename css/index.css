@@ -420,11 +420,17 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .flex-wrap {
     flex-wrap: wrap;
   }
   .place-content-end {
     place-content: end;
+  }
+  .items-baseline {
+    align-items: baseline;
   }
   .items-center {
     align-items: center;
@@ -1001,6 +1007,11 @@
   .lg\:justify-baseline {
     @media (width >= 64rem) {
       justify-content: baseline;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:bg-gaming-dark-2 {
