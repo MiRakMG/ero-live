@@ -5,6 +5,10 @@ body {
   font-family: "Rajdhani", sans-serif !important;
 }
 
+.gradient {
+  background: linear-gradient(114.66deg, #C11DFF -6.74%, #FCCD04 94.39%);
+}
+
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -14,9 +18,5 @@ body {
 }
 
 select {
-  background-color: #7B0000 !important;
-}
-
-.clip-angled {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%);
+  background-color: #F8F8F8 !important;
 }

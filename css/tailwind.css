@@ -2,11 +2,8 @@
 
 @theme {
   /* Color */
-  --color-blue: #0b415d;
   --color-blue-soft: #1f5673;
   --color-hightlight: #f05d5e;
-  --color-back: #f2f7f8;
-  --color-black-2: #101010;
   --color-dark-blue: #030920;
   --color-murrey: #db324d;
 
@@ -15,6 +12,13 @@
   --color-green: #c7ff00;
   --color-gray: #f2f7f8;
   --color-gray-2: #cccccc;
+
+  --color-back: #f2f7f8;
+  --color-black-2: #101010;
+  --color-white-2: #f8f8f8;
+  --color-yellow: #fccd04;
+  --color-indigo: #a64ac9;
+  --color-blue: #007dca;
 
   /* Spacing */
   --spacing-90: 90px;
