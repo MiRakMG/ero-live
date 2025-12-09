@@ -13,10 +13,15 @@
   --color-gray: #f2f7f8;
   --color-gray-2: #cccccc;
 
-  --color-back: #153131;
   --color-fresh-dark: #011616;
   --color-green: #45cb85;
   --color-soft: #062020;
+
+  --color-vibe-soft: #1f1f1f;
+  --color-vibe: #333333;
+  --color-back: #101010;
+  --color-yellow: #ffc53a;
+  --color-black-soft: #191919;
 
   /* Spacing */
   --spacing-90: 90px;
