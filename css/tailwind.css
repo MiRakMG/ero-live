@@ -7,14 +7,12 @@
   --color-hightlight: #f05d5e;
   --color-black-2: #101010;
   --color-dark-blue: #030920;
-  --color-murrey: #db324d;
   --color-gaming-dark: #040c1a;
   --color-gaming-dark-2: #0b1424;
   --color-gray: #f2f7f8;
   --color-gray-2: #cccccc;
 
   --color-fresh-dark: #011616;
-  --color-green: #45cb85;
   --color-soft: #062020;
 
   --color-vibe-soft: #1f1f1f;
@@ -22,6 +20,8 @@
   --color-back: #101010;
   --color-yellow: #ffc53a;
   --color-black-soft: #191919;
+  --color-green: #45cb85;
+  --color-murrey: #db324d;
 
   /* Spacing */
   --spacing-90: 90px;

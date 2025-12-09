@@ -13,19 +13,30 @@
 </head>
 
 <body class="h-dvh flex justify-center items-center text-sm bg-back relative">
-    <div class="w-[750px] z-50 bg-back rounded-lg flex flex-col items-center gap-y-6 p-10 text-white">
+    <div class="max-w-[750px] z-50 bg-back rounded-xl flex flex-col items-center gap-y-6 p-3 py-10 md:p-10 text-white relative">
         <a href="./index.html" class="h-6">
             <img src="./images/logo.svg" alt="Cam 4 Teens Logo" class="h-6" /></a>
-        <p>🔥 Explore the Hottest Live Sex Cams — 100% Free Access & Premium Private Shows.</p>
-        <p>Connect instantly with girls, guys, couples and trans performers streaming in stunning HD. Dive into a world
-            of real pleasure, real people, and real interaction live, uncensored, and always exciting.</p>
+        <p class="text-center opacity-85">🔥 Explore the Hottest Live Sex Cams — 100% Free Access & <br class="hidden xs:block"> Premium Private Shows.</p>
+        <p class="text-center">Connect instantly with girls, guys, couples and trans performers <br class="hidden xs:block">> streaming in stunning HD. Dive into a world
+            of real pleasure, real people, <br class="hidden xs:block"> and real interaction live, uncensored, and always exciting.</p>
         <p class="text-yellow">I'M OVER 18</p>
-        <div>
-            <div class="w-48 h-60 bg-white/4 flex flex-col items-center justify-center relative hover:border hover:border-murrey">
-                <iconify-icon icon="ri:women-line" class="text-7xl pb-5"></iconify-icon>
-                <p class="py-1 px-3 rounded-lg absolute bottom-3 mx-auto group-hover:bg-murrey">CamsGirls</p>
-            </div>
+        <div class="grid grid-cols-3 w-full gap-x-1 md:gap-x-3 relative z-50">
+            <a href="./pages/home.html" class="w-full md:w-48 h-60 bg-white/4 flex flex-col items-center justify-center relative group hover:border hover:border-murrey rounded-lg cursor-pointer">
+                <iconify-icon icon="ri:women-line" class="text-7xl pb-5 group-hover:text-murrey"></iconify-icon>
+                <p class="py-1 px-3 rounded-xl absolute bottom-3 mx-auto bg-vibe group-hover:bg-murrey">CamsGirls</p>
+            </a>
+            <a href="./pages/home.html" class="w-full md:w-48 h-60 bg-white/4 flex flex-col items-center justify-center relative group hover:border hover:border-green rounded-lg cursor-pointer">
+                <iconify-icon icon="ri:men-line" class="text-7xl pb-5 group-hover:text-green"></iconify-icon>
+                <p class="py-1 px-3 rounded-xl absolute bottom-3 mx-auto bg-vibe group-hover:bg-green">CamsGay</p>
+            </a>
+            <a href="./pages/home.html" class="w-full md:w-48 h-60 bg-white/4 flex flex-col items-center justify-center relative group hover:border hover:border-yellow rounded-lg cursor-pointer">
+                <iconify-icon icon="fa:transgender" class="text-7xl pb-5 group-hover:text-yellow"></iconify-icon>
+                <p class="py-1 px-3 rounded-xl absolute bottom-3 mx-auto bg-vibe group-hover:bg-yellow">TransCams</p>
+            </a>
         </div>
+        <a href="./pages/home.html" class="underline">Close</a>
+        <img src="./../images/fire-2.svg" alt="fire-2"
+            class=" absolute left-0 bottom-0 h-44 object-cover -rotate-y-180 opacity-50 z-20">
     </div>
 
 
