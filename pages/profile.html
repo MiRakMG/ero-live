@@ -11,84 +11,62 @@
     <link rel="stylesheet" href="./../css/styles.css" />
 </head>
 
-<body class="flex flex-col text-sm bg-back">
+<body class="flex flex-col text-sm bg-white">
     <div class="fixed w-full z-50">
         <!-- Navigation -->
-        <nav class="h-14 w-full bg-vibe-soft pr-5 flex gap-x-5 justify-between items-center relative ">
-            <div class="flex items-center h-full pl-5 justify-between">
-                <a href="./../index.html" class="h-6">
-                    <img src="./../images/logo.svg" alt="Cam 4 Teens Logo" class="h-6" /></a>
-            </div>
-
-            <ul class="hidden md:flex items-center gap-x-3">
-                <li>
-                    <a href="#"
-                        class="text-white/72 hover:text-white px-3 py-2 rounded-lg  hover:cursor-pointer">Home</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-white/72 hover:text-white px-3 py-2 rounded-lg  hover:cursor-pointer">Discover</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-white/72 hover:text-white px-3 py-2 rounded-lg  hover:cursor-pointer">Hashtags</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-white/72 hover:text-white px-3 py-2 rounded-lg  hover:cursor-pointer">Private
-                        Show</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-white/72 hover:text-white px-3 py-2 rounded-lg  hover:cursor-pointer">Followers</a>
-                </li>
-            </ul>
-
-            <div>
-                <button
-                    class="bg-[linear-gradient(90deg,#EBEBEB_0%,#9C9C9C_100%)] h-10 w-10 flex items-center justify-center rounded-lg cursor-pointer md:hidden">
-                    <iconify-icon icon="tabler:menu-3" class="text-black-soft text-2xl"></iconify-icon>
-                </button>
-            </div>
-
-            <img src="./../images/fire.svg" alt="fire" class="hidden md:block absolute right-0 object-cover opacity-50">
-        </nav>
-
-        <!-- Tabs -->
-        <header class="h-16 bg-vibe px-5 flex justify-center md:justify-between items-center">
-            <div class="hidden md:flex items-center gap-x-5 sm:gap-x-10">
-
-                <button class="text-white font-semibold border-b-2 border-yellow hover:cursor-pointer pb-2">
-                    Women
-                </button>
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-yellow hover:cursor-pointer pb-2">
-                    Men
-                </button>
-                <button
-                    class="text-white/40 hover:text-white hover:font-semibold hover:border-b-2 hover:border-yellow hover:cursor-pointer pb-2">
-                    Trans
-                </button>
+        <nav class="h-20 w-full bg-white pr-5 flex gap-x-5 justify-between items-center relative ">
+            <div class="flex items-center w-1/2 lg:w-1/4 h-full pl-5 justify-between">
+                <a href="./../index.html" class="h-16">
+                    <img src="./../images/logo.svg" alt="Cam 4 Teens Logo" class="h-16" /></a>
             </div>
 
             <div
-                class="flex-1 md:flex-none md:w-[45%] place-content-end bg-black-soft pl-3 lg:w-[30%] rounded-lg flex items-center gap-x-3 h-10">
-                <iconify-icon icon="ep:search" class="text-white text-2xl"></iconify-icon>
-                <input type="text" placeholder="Search live models"
-                    class="placeholder:text-white/72 w-full text-white outline-none border-none block" />
-
+                class="flex-1 lg:flex-none place-content-end lg:bg-back lg:pl-5 lg:w-[30%] rounded-lg flex items-center gap-x-3 h-10">
+                <iconify-icon icon="ep:search" class="text-black-2 text-2xl hidden md:block"></iconify-icon>
+                <input type="text" placeholder="Search..."
+                    class="placeholder:text-black-2/35 w-full text-black-2 outline-none border-none hidden lg:block" />
             </div>
 
-            <div class="hidden lg:flex items-center gap-x-3">
+            <div class="flex items-center gap-x-3">
                 <button
-                    class="hidden lg:block text-white bg-black-soft hover:bg-white hover:text-black-soft px-3 py-2 rounded-lg cursor-pointer">
+                    class="hidden lg:block text-white bg-black-soft hover:opacity-90 px-3 py-2 rounded-lg cursor-pointer">
                     BROADCAST YOURSELF
                 </button>
                 <button
-                    class="text-black-soft bg-[linear-gradient(90deg,#EBEBEB_0%,#9C9C9C_100%)] hover:opacity-90 px-3 py-2 rounded-lg cursor-pointer">
+                    class="hidden md:block text-white bg-[linear-gradient(93.35deg,#E43F6F_-1.89%,#FF86CE_106.14%)] hover:opacity-90 px-3 py-2 rounded-lg cursor-pointer">
                     Create FREE Account
                 </button>
+                <button
+                    class="md:hidden bg-[linear-gradient(93.35deg,#E43F6F_-1.89%,#FF86CE_106.14%)] h-10 w-10 flex items-center justify-center rounded-lg">
+                    <iconify-icon icon="tabler:menu-3" class="text-white text-2xl"></iconify-icon>
+                </button>
             </div>
+        </nav>
+
+        <!-- Tabs -->
+        <header
+            class="h-12 bg-gray px-5 flex justify-center gap-x-10 sm:gap-x-16 items-center relative overflow-hidden">
+            <button class="text-black font-semibold border-b-2 border-ero hover:cursor-pointer pb-1.5">
+                Featured
+            </button>
+            <button
+                class="text-black-2 hover:text-black hover:font-semibold hover:border-b-2 hover:border-ero hover:cursor-pointer pb-2">
+                Women
+            </button>
+            <button
+                class="text-black-2 hover:text-black hover:font-semibold hover:border-b-2 hover:border-ero hover:cursor-pointer pb-2">
+                Men
+            </button>
+
+            <button
+                class="text-black-2 hover:text-black hover:font-semibold hover:border-b-2 hover:border-ero hover:cursor-pointer pb-2">
+                Couples
+            </button>
+
+            <button
+                class="text-black-2 hover:text-black hover:font-semibold hover:border-b-2 hover:border-ero hover:cursor-pointer pb-2">
+                Trans
+            </button>
         </header>
     </div>
 
@@ -96,30 +74,30 @@
         class="pt-36 px-5 flex-1 w-full flex flex-col-reverse lg:flex-row gap-x-3  min-h-screen relative overflow-hidden">
         <aside
             class="w-full lg:w-[300px] flex justify-center lg:justify-start flex-wrap lg:flex-nowrap flex-row lg:flex-col gap-3">
-            <div class="h-600 w-[300px] flex flex-col lg:w-full bg-vibe text-white rounded-xl p-5 shrink-0">
+            <div class="h-600 w-[300px] flex flex-col lg:w-full bg-gray text-black-2 rounded-xl p-5 shrink-0">
                 <h3>Annonces</h3>
-                <p class="flex-1 flex flex-col justify-center items-center text-white/65">
+                <p class="flex-1 flex flex-col justify-center items-center ">
                     300x600
                 </p>
             </div>
-            <div class="h-600 w-[300px] flex flex-col lg:w-full bg-vibe text-white rounded-xl p-5 shrink-0">
+            <div class="h-600 w-[300px] flex flex-col lg:w-full bg-gray text-black-2 rounded-xl p-5 shrink-0">
                 <h3>Annonces</h3>
-                <p class="flex-1 flex flex-col justify-center items-center text-white/65">
+                <p class="flex-1 flex flex-col justify-center items-center">
                     300x600
                 </p>
             </div>
         </aside>
         <main class="flex-1 flex flex-col gap-y-3 h-full">
-            <article class="bg-vibe text-white p-5 rounded-xl flex justify-between items-start">
+            <article class="bg-gray text-black-2 p-5 rounded-xl flex justify-between items-start">
                 <div class="flex gap-x-3 items-center">
                     <div class="">
                         <div class="flex gap-x-3">
                             <h1 class="font-medium mt-2 text-2xl ">tropwet</h1>
                             <div class="flex items-center gap-x-3">
-                                <p class=" bg-gaming-dark-2 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                <p class=" bg-[#F2F0F0] backdrop-blur-xl text-black-2 py-1.5 px-2 rounded-lg">
                                     Female | FR
                                 </p>
-                                <p class=" bg-gaming-dark-2 backdrop-blur-xl text-white py-1.5 px-2 rounded-sm">
+                                <p class=" bg-[#F2F0F0] backdrop-blur-xl text-black-2 py-1.5 px-2 rounded-lg">
                                     22
                                 </p>
                             </div>
@@ -171,37 +149,37 @@
                             <span> Voir le live</span>
                         </button>
                         <button
-                            class="text-white bg-yellow px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
+                            class="text-white bg-ero px-3 py-2 rounded-sm mt-5 flex items-center gap-x-2 cursor-pointer">
                             <iconify-icon icon="fluent:chat-32-filled" class="text-sm"></iconify-icon>
                             <span>Entrer dans le chat</span>
                         </button>
                     </div>
                     <span class="text-base text-center text-white pt-3">Déjà membre ? <a href="./../index.html"
-                            class="text-yellow">Se connecter</a></span>
+                            class="text-ero">Se connecter</a></span>
                 </div>
             </section>
 
             <!-- Ads Section -->
             <div
-                class="w-full md:w-728 h-90 bg-gray/5 border border-white/15 border-dashed rounded-lg text-white/65 flex items-center justify-center ml-[50%] -translate-x-1/2 ">
+                class="w-full md:w-728 h-90 bg-black/6 border border-black/15 border-dashed rounded-lg text-black-2  flex items-center justify-center ml-[50%] -translate-x-1/2 ">
                 728x90</div>
 
 
-            <section class="text-white p-5 rounded-xl relative overflow-hidden">
+            <section class="text-black-2 p-5 rounded-xl relative overflow-hidden">
                 <!-- Tabs Header -->
                 <div class="flex border-b border-b-black-2/15 relative">
                     <button
-                        class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-white font-medium active-tab"
+                        class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-black-2 font-medium active-tab"
                         data-tab="about">
-                        <iconify-icon icon="ep:info-filled" class="text-white"></iconify-icon> About
+                        <iconify-icon icon="ep:info-filled" class="text-black-2"></iconify-icon> About
                     </button>
-                    <button class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-white font-medium"
+                    <button class="tab-btn cursor-pointer flex items-center gap-2 px-4 py-2 text-black-2 font-medium"
                         data-tab="tags">
-                        <iconify-icon icon="fa:tags" class="text-white"></iconify-icon> Tags
+                        <iconify-icon icon="fa:tags" class="text-black-2"></iconify-icon> Tags
                     </button>
 
                     <span id="active-bar"
-                        class="absolute bottom-0 left-0 h-[3px] bg-yellow rounded transition-all duration-300 w-20"></span>
+                        class="absolute bottom-0 left-0 h-[3px] bg-ero rounded transition-all duration-300 w-20"></span>
                 </div>
 
                 <!-- Tabs Content -->
@@ -253,7 +231,7 @@
                 </div>
             </section>
         </main>
-        <img src="./../images/fire-2.svg" alt="fire-2"
+         <img src="./../images/kiss.svg" alt="kiss"
             class="hidden lg:block absolute right-0 bottom-0 h-44 object-cover opacity-50">
     </div>
     <script src="./../js/index.js"></script>

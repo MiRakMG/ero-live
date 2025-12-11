@@ -5,23 +5,27 @@
   --color-blue: #0b415d;
   --color-blue-soft: #1f5673;
   --color-hightlight: #f05d5e;
-  --color-black-2: #101010;
   --color-dark-blue: #030920;
   --color-gaming-dark: #040c1a;
   --color-gaming-dark-2: #0b1424;
-  --color-gray: #f2f7f8;
   --color-gray-2: #cccccc;
 
   --color-fresh-dark: #011616;
   --color-soft: #062020;
 
   --color-vibe-soft: #1f1f1f;
-  --color-vibe: #333333;
-  --color-back: #101010;
   --color-yellow: #ffc53a;
-  --color-black-soft: #191919;
   --color-green: #45cb85;
   --color-murrey: #db324d;
+
+  --color-ero: #e43f6f;
+  --color-red-ero: #f56476;
+  --color-black-soft: #191919;
+  --color-gray: #f8f8f8;
+  --color-back: #f2f7f8;
+  --color-vibe: #333333;
+  --color-black-2: #101010;
+  --color-white-2: #f2f7f8;
 
   /* Spacing */
   --spacing-90: 90px;
